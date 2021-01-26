@@ -97,7 +97,8 @@
         var readAmount = document.getElementById(id)
         var readValue = parseFloat(readAmount.value)
         if (isNaN(readValue)) {
-            readValue = 0
+            readValue = 0;
+            alert('You have to put a number value')
         }
         readAmount.value = ""
         return readValue
