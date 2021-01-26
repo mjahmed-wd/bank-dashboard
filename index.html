@@ -96,6 +96,9 @@
     function inputValue(id) {
         var readAmount = document.getElementById(id)
         var readValue = parseFloat(readAmount.value)
+        if (isNaN(readValue)) {
+            readValue = 0
+        }
         readAmount.value = ""
         return readValue
     }
