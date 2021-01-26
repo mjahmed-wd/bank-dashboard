@@ -103,7 +103,7 @@
     function withdraw(id, mainWithdraw) {
         var readWithdraw = document.getElementById(id)
         var totalWithdraw = parseFloat(readWithdraw.innerText)
-        var total = Math.abs(totalWithdraw - mainWithdraw)
+        var total = (totalWithdraw - mainWithdraw)
         readWithdraw.innerText = total
     }
     //deposit function
